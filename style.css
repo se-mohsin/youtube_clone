@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FF0000;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.video-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+}
+
+.video-info {
+    padding: 10px;
+}
+
+.video-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.video-info p {
+    margin: 5px 0;
+    color: #555;
+}
